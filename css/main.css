@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body {
+    font: 16px/1.5 dotum, gulim;
+    color: #000;
+}
+
+.blind {
+    display: none;
+}
