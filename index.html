@@ -4,16 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메가박스 클론코딩</title>
+    <title>메가박스(클론)</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="script/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
     <h1 class="blind">메가박스</h1>
-    <div class="광고">
-        <img src="images/h-direct.jpg" alt="현대해상 다이렉트">
+    <div class="ad">
+        <div class="ad-img">
+            <img src="images/h-direct.jpg" alt="현대해상 다이렉트">
+        </div>
+        <div class="ad-close">
+            <a href="#">&times;</a>
+        </div>
     </div>
+    <header>
+        <div class="header-wrap"><!-- kebab-case -->
+            <div id="headerMain"><!-- camelCase -->
+                <div id="mainLeft">
+                    <ul class="vip">
+                        <li><a href="#">vip lounge</a></li>
+                        <li><a href="#">멤버쉽</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><img src="images/ico-sitemap-white.png" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="images/ico-search-white.png" alt="검색"></a></li>
+                    </ul>
+                    <div class="nav">
+                        <ul id="gnbLeft">
+                            <li><a href="#">영화</a></li>
+                            <li><a href="#">극장</a></li>
+                            <li><a href="#">예매</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /#mainLeft -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/white_logo.png" alt="메가박스">
+                    </a>
+                </div>
+                <div id="mainRight">
+                    <ul class="member">
+                        <li><a href="#">vip lounge</a></li>
+                        <li><a href="#">멤버쉽</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><img src="images/ico-sitemap-white.png" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="images/ico-search-white.png" alt="검색"></a></li>
+                    </ul>
+                    <div class="nav">
+                        <ul id="gnbRight">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">스토어</a></li>
+                            <li><a href="#">혜택</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(function(){
+            $(".ad-close").click(function(){
+                $(".ad").hide();
+            })
+        })
+    </script>
 </body>
 </html>
 <!--:      git init
