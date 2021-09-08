@@ -46,4 +46,25 @@ ul {
     margin: 0 auto;
     color: white;
     display: flex;
+    justify-content: space-between;
+}
+.vip {
+    display: flex;
+}
+.vip > li {
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.icon-left {
+    display: flex;
+}
+
+#gnbLeft {
+    display: flex;
+    color: beige;
+}
+#gnbLeft > li {
+    width: 150px;
+    text-align: center;
 }
