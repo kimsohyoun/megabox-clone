@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 body {
@@ -72,7 +71,6 @@ ul {
 }
 #gnbLeft {
     display: flex;
-    color: beige;
 }
 #gnbLeft > li {
     text-align: center;
@@ -81,10 +79,20 @@ ul {
 
 .member {
     display: flex;
+    justify-content: flex-end;
 }
 .right-box {
     display: flex;
+    justify-content: flex-end; /* 플렉스 끝: row 일때 우측 */
 }
 .icon-right {
     display: flex;
+    order: 2; /* flex 순서 */
+}
+#gnbRight {
+    display: flex;
+}
+#gnbRight > li {
+    text-align: center;
+    padding: 0 40px;
 }
