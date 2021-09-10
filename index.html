@@ -14,6 +14,14 @@
 </head>
 <body>
     <h1 class="blind">메가박스</h1>
+    <div id="modal">
+        <div class="message">
+            <h2>알림</h2>
+            <button id="close_x">&times;</button>
+            <p>로그인후 이용가능한 서비스입니다.</p>
+            <button id="close_ok">확인</button>
+        </div>
+    </div>    
     <div class="ad">
         <div class="ad-img">
             <img src="images/h-direct.jpg" alt="현대해상 다이렉트">
@@ -31,16 +39,18 @@
                         <li><a href="#">멤버쉽</a></li>
                         <li><a href="#">고객센터</a></li>
                     </ul>
-                    <ul class="icon-left">
-                        <li><a href="#"><img src="images/ico-sitemap-white.png" alt="메뉴"></a></li>
-                        <li><a href="#"><img src="images/ico-search-white.png" alt="검색"></a></li>
-                    </ul>
-                    <div class="nav">
-                        <ul id="gnbLeft">
-                            <li><a href="#">영화</a></li>
-                            <li><a href="#">극장</a></li>
-                            <li><a href="#">예매</a></li>
+                    <div class="left-box">
+                        <ul class="icon-left">
+                            <li><a href="#"><img src="images/ico-sitemap-white.png" alt="메뉴"></a></li>
+                            <li><a href="#"><img src="images/ico-search-white.png" alt="검색"></a></li>
                         </ul>
+                        <div class="nav">
+                            <ul id="gnbLeft">
+                                <li><a href="#">영화</a></li>
+                                <li><a href="#">극장</a></li>
+                                <li><a href="#">예매</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <!-- /#mainLeft -->
@@ -51,34 +61,163 @@
                 </div>
                 <div id="mainRight">
                     <ul class="member">
-                        <li><a href="#">vip lounge</a></li>
-                        <li><a href="#">멤버쉽</a></li>
-                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">빠른예매</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#"><img src="images/ico-sitemap-white.png" alt="메뉴"></a></li>
-                        <li><a href="#"><img src="images/ico-search-white.png" alt="검색"></a></li>
-                    </ul>
-                    <div class="nav">
-                        <ul id="gnbRight">
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">스토어</a></li>
-                            <li><a href="#">혜택</a></li>
+                    <div class="right-box">
+                        <ul class="icon-right">
+                            <li><a href="#"><img src="images/ico-schedule-white.png" alt="메뉴"></a></li>
+                            <li><a href="#"><img src="images/ico-mymega-white.png" alt="검색"></a></li>
                         </ul>
+                        <div class="nav">
+                            <ul id="gnbRight">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">스토어</a></li>
+                                <li><a href="#">혜택</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <script>
-        $(function(){
-            $(".ad-close").click(function(){
-                $(".ad").hide();
-            })
-        })
-    </script>
+    <section>
+        <h2 class="blind">메가박스 박스오피스</h2>
+        <article>
+            <hgroup>
+                <h3>박스오피스</h3>
+                <h4><a href="#">더 많은 영화보기 <span class="plus">&plus;</span></a></h4>
+            </hgroup>
+            <h5 class="blind">베스트4</h5>
+            <div class="best4-wrap">
+                <ol id="best4">
+                    <li>
+                        <div class="box-office">
+                            <div class="movie-poster">
+                                <div class="rank">
+                                    <p>1</p>
+                                </div>
+                                <div class="screen">
+                                    <div><img src="images/dolby.png" alt="돌비 서라운드"></div>
+                                    <div><img src="images/mx.png" alt="멀티플렉스"></div>
+                                </div>
+                                <div class="info-overlay">
+                                    <a href="#">
+                                        <p>아직 만난 적 없는 너를, 찾고 있어</p>
+                                        <p>천년 만에 다가오는 혜성 기적이 시작된다</p>
+                                        <p>도쿄에 사는 소년 ‘타키’와 시골에 사는 소녀 ‘미츠하’는</p>
+                                        <div class="reviews">
+                                            <hr>
+                                            관람평 <span class="score">8.8</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <img src="images/movie1.jpg" alt="너의 이름은">
+                            </div>
+                        </div>
+                        <div class="box-btns">
+                            <a href="#" class="favorite">
+                                <div id="heart"></div>3.9k
+                            </a>
+                            <a href="#" class="booking">예매</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-office">
+                            <div class="movie-poster">
+                                <div class="rank">
+                                    <p>2</p>
+                                </div>
+                                <div class="screen">
+                                    <div><img src="images/dolby.png" alt="돌비 서라운드"></div>
+                                    <div><img src="images/mx.png" alt="멀티플렉스"></div>
+                                </div>
+                                <div class="info-overlay">
+                                    <p>텐 링즈’를 차지하는 자, 세상을 지배한다!</p>
+                                    <p>초인적인 능력을 가진 ‘텐 링즈’의 힘으로 수세기 동안 어둠의 세상을 지배해 온 ‘웬우’'샹치’는</p>
+                                    <p>아버지 ‘웬우’ 밑에서 암살자로 훈련을 받았지만 이를 거부하고 평범함 삶을 선택한다.</p>
+                                    <div class="reviews">
+                                        <hr>
+                                        관람평 <span class="score">8.3</span>
+                                    </div>
+                                </div>
+                                <img src="images/movie2.jpg" alt="너의 이름은">
+                            </div>
+                        </div>
+                        <div class="box-btns">
+                            <a href="#" class="favorite">
+                                <div id="heart"></div>669
+                            </a>
+                            <a href="#" class="booking">예매</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-office">
+                            <div class="movie-poster">
+                                <div class="rank">
+                                    <p>3</p>
+                                </div>
+                                <div class="screen">
+                                    <div><img src="images/mx.png" alt="멀티플렉스"></div>
+                                </div>
+                                <div class="info-overlay">
+                                    <p>오갈 수 있는 길은 기찻길밖에 없지만
+                                        정작 기차역은 없는 마을.</p>
+                                    <p>오늘부로 청와대에 딱 54번째 편지를 보낸 ‘준경’(박정민)의 목표는 단 하나!</p>
+                                    <p>바로 마을에 기차역이 생기는 것</p>
+                                    <div class="reviews">
+                                        <hr>
+                                        관람평 <span class="score">0</span>
+                                    </div>
+                                </div>
+                                <img src="images/movie3.jpg" alt="너의 이름은">
+                            </div>
+                        </div>
+                        <div class="box-btns">
+                            <a href="#" class="favorite">
+                                <div id="heart"></div>263
+                            </a>
+                            <a href="#" class="booking">예매</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-office">
+                            <div class="movie-poster">
+                                <div class="rank">
+                                    <p>4</p>
+                                </div>
+                                <div class="screen">
+                                    <div><img src="images/dolby.png" alt="돌비 서라운드"></div>
+                                    <div><img src="images/mx.png" alt="멀티플렉스"></div>
+                                </div>
+                                <div class="info-overlay">
+                                    <p>배우 황정민 '인질'로 잡혔다!</p>
+                                    <p>평소와 똑같던 어느 새벽,</p>
+                                    <p>서울 한복판에서 증거도, 목격자도 없이 대한민국 톱배우 '황정민'이 납치된다.</p>
+                                    <div class="reviews">
+                                        <hr>
+                                        관람평 <span class="score">8.6</span>
+                                    </div>
+                                </div>
+                                <img src="images/movie4.jpg" alt="너의 이름은">
+                            </div>                            
+                        </div>
+                        <div class="box-btns">
+                            <a href="#" class="favorite">
+                                <div id="heart"></div>693
+                            </a>
+                            <a href="#" class="booking">예매</a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </article>
+    </section>
+    <script src="script/main.js"></script>
 </body>
 </html>
+
 <!--:      git init
     :      git status
     :      git add README.md  (모든 파일,폴더    git add .)
