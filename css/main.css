@@ -3,13 +3,12 @@
 body {
     font: 16px/1.5 "Noto Sans KR","Maven Pro", sans-serif;
     color: #000;
-    background: black;
 }
 a, a:link {
     color: inherit;
     text-decoration: none;
 }
-ul {
+ul,ol {
     list-style: none;
 }
 .blind {
@@ -17,6 +16,7 @@ ul {
 }
 
 /* ------------ 1일차 : ad ------------------------ */
+
 #modal {
     display: none;
     position: fixed;
@@ -89,7 +89,10 @@ ul {
     background: rgb(126, 126, 126);
     color: white;
 }
-
+/* -------------- header ----------------- */
+header {
+    background: rgba(0,0,0,.8);
+}
 .header-wrap {
     border-bottom:1px solid #333;
     height: 90px;
@@ -152,9 +155,39 @@ ul {
 }
 
 /* section 영역 - 박스오피스 */
+#main {
+    background:url("../images/bg-pattern.png"), url("../images/bg-large.jpg") no-repeat center / cover;    
+    padding:50px 0 100px;
+}
+hgroup {
+    max-width: 1100px;
+    margin:50px auto 20px;        
+    position: relative;
+    height: 50px;
+    color: ivory;
+}
+hgroup h3 {
+    text-align: center;
+}
+hgroup h3::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 2px;
+    background: silver;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+hgroup h4 {
+    position: absolute;
+    right: 0;
+    color: #ddd;
+}
 .best4-wrap {
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 #best4 {
     display: flex;
@@ -255,9 +288,58 @@ ul {
 .booking {
     border: 1px solid transparent;
     border-radius: 5px;
-    background: rgb(94, 167, 195);
+    background: #037b94;
     color: white;
     text-align: center;
     padding: 5px 65px;
     font-size: 1rem;
+}
+
+/* --------- search, extra --------------- */
+#search_extra {
+    margin: 10px 0;
+    background:rgba(0,0,0,.7);
+    border-radius: 5px;
+    display: flex;
+}
+#search_extra > div {
+    flex: 1;
+    position: relative;
+    padding: 25px 0;
+    text-align: center;
+    color: ivory;
+}
+#search_extra > div::after {
+    content:'';
+    display:block;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 1px;
+    height: 50%;
+    background: ivory;
+}
+#search_extra > div:nth-last-child(1)::after {
+    display: none;
+}
+#search_extra > div img {
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+#search input[type=text] {
+    outline: 0;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid ivory;
+    color: white;
+    text-indent: 5px;
+}
+
+#mouse {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
 }
