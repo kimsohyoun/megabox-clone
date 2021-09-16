@@ -370,16 +370,40 @@ hgroup h4 {
 .fit-left {
     float: left;
     width: calc(100% - 430px); /* 원래 415px + 여백 15px */
+    height: 530px;
     position: relative;
 }
 #carousel {
-    height: 285px;
+    height: 300px;
+    margin:0 0 27px 0;
     overflow: hidden;
     position: relative;
 }
 #control {
     position: absolute;
     bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.pager {
+    display: flex;
+    margin: 5px 0 0 0;
+}
+.pager li {
+    width: 20px;
+    height: 2px;
+    background: #eee;
+    text-indent: -9999px;
+}
+.pager li.on {
+    background: rgb(91, 23, 112);
+}
+
+.btns button { 
+    border: 0;
+    background: none; 
+    color: rgb(91, 23, 112);
+    font-weight: bold;
 }
 #slide-text {
     position: absolute;
@@ -392,6 +416,21 @@ hgroup h4 {
     display: flex;
     flex: 1; /* flex item 확대, 축소 */
 }
+#campaign li {
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 0;
+}
+#campaign li:nth-child(1) {
+    width: 66%;
+}
+#campaign li:nth-child(2) {
+    width: 30%;
+    margin-left:4%;
+}
+#campaign li:nth-child(2) img {
+    transform: scale(1.02);
+}
 #campaign img {
     max-width: 100%;
 }
@@ -399,4 +438,56 @@ hgroup h4 {
 .fit-right {
     width: 415px;
     float: right;
+}
+.fit-right a {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    font-size: 0;
+}
+
+/* ----------- benefit --------------- */
+.ico-benefit {
+    padding: 130px 0 80px;
+    margin: -100px 0 0 0;
+    background: #503396;
+}
+.ico-benefit ul {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ico-benefit ul li {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ico-benefit ul li figcaption {
+    margin: 20px 0;
+}
+
+/* ---------- 세번째 article --------------- */
+#main article:nth-of-type(3) {
+    background: #252451;
+    padding: 50px 0;
+}
+.curation-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+}
+#curation {
+    display: flex;
+}
+.art {
+    width: 300px;
+}
+.info {
+    width: calc(100% - 300px);  
+    margin-left: 30px;
+}
+.category {
+    display: flex;
 }

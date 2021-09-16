@@ -257,11 +257,23 @@
                                 </ul>
                             </div>
                             <div id="control">
-                                ------------
-                                <button>&lt;</button>
-                                <button>&gt;</button>
-                                <button>||</button>
-                                <div class="page">1/9</div>
+                                <ul class="pager">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li class="on">3</li>                                
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                </ul>
+                                <div class="btns">
+                                    <button><i class="fas fa-chevron-left"></i></button>
+                                    <button><i class="fas fa-chevron-right"></i></button>
+                                    <button><i class="fas fa-pause"></i></button>
+                                </div>
+                                <div class="nums">1/9</div>
                             </div>
                         </div>
                         <ul id="campaign">
@@ -277,36 +289,100 @@
                 </div>
             </div>
             <div class="ico-benefit">
-                <li>
-                    <figure>
-                        <img src="images/ico-vip-main.png" alt="vip lounge">
-                        <figcaption>vip lounge</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/ico-membership-main.png" alt="멤버쉽">
-                        <figcaption>멤버쉽</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/ico-card-main.png" alt="할인카드">
-                        <figcaption>할인카드</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/ico-event-main.png" alt="이벤트">
-                        <figcaption>이벤트</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/ico-store-main.png" alt="스토어">
-                        <figcaption>스토어</figcaption>
-                    </figure>
-                </li>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="images/ico-vip-main.png" alt="vip lounge">
+                            <figcaption>vip lounge</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/ico-membership-main.png" alt="멤버쉽">
+                            <figcaption>멤버쉽</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/ico-card-main.png" alt="할인카드">
+                            <figcaption>할인카드</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/ico-event-main.png" alt="이벤트">
+                            <figcaption>이벤트</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/ico-store-main.png" alt="스토어">
+                            <figcaption>스토어</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <div class="curation-wrap">
+                <h3>큐레이션 <span id="benefit">큐레이션 더보기&plus;</span></h3>
+                <div id="curation">
+                    <div class="art">
+                        <div class="curation-badge">
+                            <img src="images/badge-curation.png" alt="큐레이션">
+                        </div>
+                        <figure>
+                            <img src="images/rigoletto.jpg" alt="리골레토">
+                            <figcaption class="blind">리골레토</figcaption>
+                        </figure>
+                        <button onclick="alert('서비스 점검중입니다');">상세정보</button>
+                        <button id="ticketing">예매</button>
+                    </div>
+                    <div class="info">
+                        <h2>#클래식 소사이어티</h2>
+                        <h3>[필름오페라 앙코르] 리골레토</h3>
+                        <hr>
+                        <h4>[상영 정보]</h4>
+                        <ul>
+                            <li>- 상영 지점 : 코엑스, 센트럴, 목동, 킨텍스, 분당, 성수</li>
+                            <li>- 러닝 타임 : 122분 * 인터미션 없음</li>
+                            <li>- 상영 일정 : 2021년 8월 18일(수) ~ 2021년 9월 29일(수) / 수 19:00 (목동, 킨텍스, 센트럴 14:00), 일 14:00 상영</li>
+                            <li>*8/22(일)은 '2021 잘츠부르크 페스티벌' 라이브 중계 관계로 상영이 없습니다.</li>
+                            <li>- 티켓 가격 : 일반 25,000원, 청소년/우대 20,000원</li>
+                            <li>*티켓 가격은 상영관 타입에 따라 상이할 수 있습니다.</li>
+                        </ul>
+                        <ul class="category">
+                            <li>
+                                <div class="badge-film"><img src="images/badge-film.png" alt="film"></div>
+                                <figure>
+                                    <img src="images/film1.jpg" alt="좋은사람">
+                                    <figcaption>좋은사람</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <div class="badge-film"><img src="images/badge-film.png" alt="film"></div>
+                                <figure>
+                                    <img src="images/film2.jpg" alt="좋은사람">
+                                    <figcaption>좋은사람</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <div class="badge-film"><img src="images/badge-film.png" alt="film"></div>
+                                <figure>
+                                    <img src="images/film3.jpg" alt="좋은사람">
+                                    <figcaption>좋은사람</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <div class="badge-film"><img src="images/badge-film.png" alt="film"></div>
+                                <figure>
+                                    <img src="images/film4.jpg" alt="좋은사람">
+                                    <figcaption>좋은사람</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </article>
     </section>
