@@ -686,3 +686,63 @@ hgroup h4 {
     background: url("../images/ico-arr-right-gray.png") right center no-repeat;
     padding-right: 15px;
 }
+
+.icons {
+    display: flex;
+    max-width: 1100px; 
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: .825rem;
+}
+.icons li {
+    text-align: center;
+}
+
+/* banner */
+.banner {
+    background: #222;    
+}
+.banner-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* footer */
+.footer-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.bnb-cinema {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .750rem;
+    padding: 20px 0;
+}
+#bnb {
+    display: flex;
+    column-gap: 10px;
+}
+#cinema {
+    font-size: .750rem;
+    background: none;
+    border-radius: 20px;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    width: 100px;
+    text-indent: 10%;
+    background:url("../images/ico-footer-search.png") no-repeat 15% center;
+}
+
+.site-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: .825rem;
+}
+address {
+    font-style: normal;
+    margin: 0 auto 0 2%;
+}
+.sns {
+    display: flex;
+}
